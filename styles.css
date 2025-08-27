@@ -27,8 +27,10 @@ body {
     position: relative;
     width: 100%;
     height: 100vh;
-    background-color: #0044aa;
-    color: #ffffff;
+    background: white;
+   /* background-color: #0044aa;*/
+   /* color: #ffffff;*/
+   color: black;
 }
 
 .page1 .content {
@@ -49,7 +51,8 @@ nav {
 
 a {
     text-decoration: none;
-    color: #ffffff;
+   /* color: #ffffff;*/
+    color: black;
     text-transform: uppercase;
     font-size: 1.1rem;
 }
@@ -79,12 +82,23 @@ nav .logo {
     height: calc(100vh - 5rem);
 }
 
+.box {
+    position: absolute;
+    width: 9.5rem;
+    height: 13rem;
+    background: blue;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%, -50%);
+}
+
 #bgVideo {
     position: absolute;
     width: 100%;
     height: 100%;
-    top: 0;
+    top: 20%;
     mix-blend-mode: lighten;
+    clip-path: inset(35% 45% 35% 45%);
     transition: 0.5s;
     z-index: 0;
 }
@@ -111,19 +125,32 @@ nav .logo {
    font-size: 7rem;
    font-weight: 300;
    line-height: 8rem;
+   position: relative;
+   left: 75%;
+   bottom: 55%;
 }
 
 .one .left p {
     font-size: 1.1rem;
     line-height: 1.4rem;
+    position: relative;
+    left: 75%;
+    bottom: 55%;
 }
 
-#lastText {
+#LastText {
     position: relative;
     margin-top: 1rem;
     display: flex;
     align-items: center;
     gap: 1rem;
+}
+
+#lastText h3 {
+    font-family: "Quicksand", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 200;
+    letter-spacing: 0.4rem;
 }
 
 #lastText i {
@@ -134,9 +161,11 @@ nav .logo {
     position: relative;
     width: 15rem;
     height: 15rem;
+    left: 20%;
     border: 3px solid white;
     border-radius: 30px;
     overflow: hidden;
+    opacity: 0;
 }
 
 .right img {
@@ -156,10 +185,30 @@ nav .logo {
     width: 23%;
 }
 
+.bottom .two .left h3 {
+    font-size: 1.3rem;
+    padding: 0.5rem 0;
+    border-bottom: 2px solid white;
+}
+
+.bottom .two .left p {
+    margin-top: 0.4rem;
+    font-size: 0.9rem;
+}
+
+.two a h3 {
+    font-weight: 400;
+    font-family: "Libre Baskerville", serif;
+    padding-right: 7rem;
+    letter-spacing: 0.5rem;
+}
+
 .bottom .two .right {
     position: relative;
     width: 14rem;
     height: 13rem;
+    left: 20%;
+    opacity: 0;
     border-radius: 30px;
     overflow: hidden;
     z-index: 1;
