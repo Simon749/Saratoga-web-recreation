@@ -7,7 +7,7 @@ const smoother = ScrollSmoother.create({
     smooth: 2.5,
     smoothTouch: 0.1,
     effects: true
-})
+});
 
 const tl = gsap.timeline();
 
@@ -63,17 +63,17 @@ const tl2 = gsap.timeline({
 
 tl2.to(".nextPage", {
     transform: "translate(-50%, -50%)"
-}, 'a')
+}, 'b')
 .from(".nextPage .top h1",{
     delay: 0.3,
     top: "33%",
     left: "25%"
-}, 'a')
+}, 'b')
 .from("#textContent",{
     delay: 0.3,
     top: "120%",
     left: "-25%",
-}, 'a')
+}, 'b')
 .from("#left img", {
     delay: 0.3,
     width: "10rem",
@@ -82,7 +82,7 @@ tl2.to(".nextPage", {
     rotate: "-22deg",
     borderRadius: "10px"
 
-}, 'a') 
+}, 'b') 
 .from("#right img", {
     delay: 0.3,
     width: "10rem",
@@ -91,16 +91,31 @@ tl2.to(".nextPage", {
     left: "25%",
     rotate: "-22deg",
     borderRadius: "10px"    
-}, 'a')
+}, 'b')
 .from("#secondImage, #firstImage", {
     delay: 0.3,
     width: "10rem",
     height: "10rem",
     top: "50%",
     borderRadius: "10px"
-}, 'a')
+}, 'b')
 .set("#left, #right", {
     overflow: "hidden"
 })
 
-tl2.to({}, {duration: 0.2}, "+=0")
+tl2.to({}, {duration: 0.2}, "+=0");
+
+
+const tl3 = gsap.timeline({
+    ScrollTrigger: {
+        trigger: ".page2",
+        start: "23% 29%",
+        end: "280% 20%",
+        scrub: true,
+        pin: true 
+    }
+});
+
+tl3.to(".page2 .slider", {
+    left: "-160"
+});
