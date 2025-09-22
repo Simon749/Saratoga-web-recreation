@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=BioRhyme:wght@200..800&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Great+Vibes&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&family=Yellowtail&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap&&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&family=Yellowtail&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
 
 * {
     margin: 0;
@@ -8,40 +8,29 @@
     font-family: sans-serif;
 }
 
-
 html,
 body {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 
-/* font-family: "Quicksand", sans-serif; */
-/*  font-family: "Libre Baskerville", serif;
-  font-weight: 400;
-  font-style: normal;
-}*/
-
-
-.page1,
-.nextPage,
-.page2 {
+.page1, .nextPage, .page2{
     position: relative;
     width: 100%;
     height: 100vh;
-   /* min-height: 100vh;*/
+    /* background: #0044aa; */
     background: white;
-    /* background-color: #0044aa;*/
-    /* color: #ffffff;*/
+    /* color: #ffffff; */
     color: black;
 }
 
-.page1 .content {
+.page1 .content{
     width: 100%;
     height: 100vh;
 }
 
-nav {
+nav{
     position: relative;
     width: 100%;
     height: 5rem;
@@ -52,61 +41,61 @@ nav {
     z-index: 1;
 }
 
-a {
+a{
     text-decoration: none;
-    /* color: #ffffff;*/
+    /* color: #ffffff; */
     color: black;
     text-transform: uppercase;
     font-size: 1.1rem;
 }
 
-nav .logo {
+nav .logo{
     font-family: "Libre Baskerville", serif;
     font-weight: 600;
     font-style: normal;
     font-size: 1.4rem;
     letter-spacing: 1.8px;
-
 }
 
-.navigation {
+.navigation{
     display: flex;
     gap: 6rem;
     padding-right: 3rem;
 }
 
-#menuIcon i {
+#menuIcon i{
     font-size: 1.8rem;
 }
 
-.container {
+.container{
     position: relative;
     width: 100%;
     height: calc(100vh - 5rem);
 }
 
-.box {
+.box{
     position: absolute;
-    width: 9.5rem;
-    height: 13rem;
-    background: blue;
-    left: 50%;
-    top: 70%;
-    transform: translate(-50%, -50%);
+  width: 9.5rem;
+  height: 13rem;
+  background: blue;
+  left: 50%;
+  top: 70%;
+  transform: translate(-50%, -50%);
 }
 
-#bgVideo {
+#bgVideo{
     position: absolute;
+    clip-path: inset(35% 45% 35% 45%);
     width: 100%;
     height: 100%;
+    /* change top */
     top: 20%;
     mix-blend-mode: lighten;
-    clip-path: inset(35% 45% 35% 45%);
     transition: 0.5s;
     z-index: 0;
 }
 
-.container .bottom {
+.container .bottom{
     position: absolute;
     width: 100%;
     height: 85%;
@@ -114,34 +103,36 @@ nav .logo {
     padding: 3rem;
 }
 
-.container .bottom .one {
+.container .bottom .one{
     display: flex;
     justify-content: space-between;
 }
 
-.bottom .one .left {
+.bottom .one .left{
     width: 40%;
 }
 
-.one .left h1 {
+.one .left h1{
     font-family: "Quicksand", sans-serif;
     font-size: 7rem;
     font-weight: 300;
     line-height: 8rem;
+    /* gs */
     position: relative;
-    left: 75%;
-    bottom: 55%;
+  bottom: 55%;
+  left: 75%;
 }
 
-.one .left p {
+.one .left p{
     font-size: 1.1rem;
     line-height: 1.4rem;
+    /* gs */
     position: relative;
-    left: 75%;
-    bottom: 55%;
+  bottom: 55%;
+  left: 75%;
 }
 
-#LastText {
+#lastText{
     position: relative;
     margin-top: 1rem;
     display: flex;
@@ -149,18 +140,18 @@ nav .logo {
     gap: 1rem;
 }
 
-#lastText h3 {
+#lastText h3{
     font-family: "Quicksand", sans-serif;
     font-size: 2.5rem;
     font-weight: 200;
     letter-spacing: 0.4rem;
 }
 
-#lastText i {
+#lastText i{
     font-size: 2rem;
 }
 
-.bottom .one .right {
+.bottom .one .right{
     position: relative;
     width: 15rem;
     height: 15rem;
@@ -171,69 +162,72 @@ nav .logo {
     opacity: 0;
 }
 
-.right img {
+.right img{
     width: 100%;
     height: 100%;
     object-fit: contain;
 }
 
-.container .bottom .two {
+/* two */
+.container .bottom .two{
     display: flex;
     justify-content: space-between;
     align-items: end;
 }
 
-.two .left {
+.two .left{
     position: relative;
     width: 23%;
 }
 
-.bottom .two .left h3 {
+.bottom .two .left h3{
     font-size: 1.3rem;
     padding: 0.5rem 0;
     border-bottom: 2px solid white;
 }
 
-.bottom .two .left p {
+.bottom .two .left p{
     margin-top: 0.4rem;
     font-size: 0.9rem;
 }
 
-.two a h3 {
+.two a h3{
     font-weight: 400;
     font-family: "Libre Baskerville", serif;
     padding-right: 7rem;
     letter-spacing: 0.5rem;
 }
 
-.bottom .two .right {
+.bottom .two .right{
     position: relative;
     width: 14rem;
     height: 13rem;
     left: 20%;
-    opacity: 0;
     border-radius: 30px;
     overflow: hidden;
     z-index: 1;
+    opacity: 0;
 }
 
-.right video {
+.right video{
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.nextPage {
+/* next page */
+
+.nextPage{
     position: absolute;
     padding: 1rem 5rem;
     top: 50%;
     left: 50%;
     transform: translate(-50%, 100%);
-    /* transform: translate(-50%, -50%);*/
+    /* transform: translate(-50%, -50%); */
     z-index: 2;
 }
 
-.nextPage .top {
+.nextPage .top{
     width: 100%;
     height: 15%;
     display: flex;
@@ -242,67 +236,71 @@ nav .logo {
     padding: 0 0.5rem;
 }
 
-.nextPage .top h1 {
+.nextPage .top h1{
     position: relative;
-    /* top: 33%;
-    left: 25%;*/
+    /* gsap */
+    /* left: 33%;
+    top: 25%; */
 }
 
-.nextPage .top h1 span {
+.nextPage .top h1 span{
     font-family: "Quicksand", sans-serif;
     font-size: 5rem;
     font-weight: 300;
 }
 
-#text1 {
+#text1{
     color: #c0afa9;
 }
 
-#text2 {
+#text2{
     color: #032c95;
 }
 
-#textContent {
+#textContent{
     position: relative;
     width: 40%;
+    /* gsap */
     /* top: 120%;
-    left: -25%;*/
+  left: -25%; */
 }
 
-#endText {
+#endText{
     display: flex;
     align-items: center;
     gap: 0.5rem;
     width: 100%;
 }
 
-#endText h3 {
+#endText h3{
     font-family: "Quicksand", sans-serif;
     font-size: 2rem;
     font-weight: 500;
     letter-spacing: 5px;
 }
 
-#endText i {
+#endText i{
     font-size: 1.5rem;
 }
 
-.nextPage .bottom {
+/* bottom style */
+.nextPage .bottom{
     width: 100%;
     height: 85%;
     display: flex;
     gap: 1rem;
 }
 
-#left,
-#right {
+#left, #right{
     width: 45%;
     height: 100%;
     border-radius: 20px;
-    /*  overflow: hidden; */
+    /* gs */
+    /* overflow: hidden; */
+    /* overflowhidden line */
 }
 
-#mid {
+#mid{
     width: 25%;
     height: 100%;
     display: flex;
@@ -310,52 +308,66 @@ nav .logo {
     gap: 1rem;
 }
 
-#mid #fistImage,
-#mid #secondImage {
+#mid #firstImage, #mid #secondImage{
     position: relative;
     width: 100%;
     height: 40%;
-    /*  width: 10rem;
-    height: 10rem;*/
     border-radius: 20px;
+
+    /* gsap */
+    /* width: 10rem;
+    height: 10rem;
+    border-radius: 10px;
+    top: 50%; */
+    /*  */
+
     object-fit: cover;
     overflow: hidden;
-    /*  top: 50%;
-    border-radius: 10px;*/
+
 }
 
-#mid #secondImage {
+#mid #secondImage{
     height: 60%;
+    /* gsap */
+    /* height: 10rem; */
 }
 
-#left img,
-#right img {
+#right{
+    width: 30%;
+}
+
+#left img, #right img{
     position: relative;
     width: 100%;
     height: 100%;
-    /*  width: 10rem;
-    height: 10rem;
     object-fit: cover;
+
+    /* gsap */
+    /* width: 10rem;
+    height: 10rem;
+    border-radius: 10px;
     top: -10%;
-    rotate: -22deg;
-    border-radius: 10px;*/
+  rotate: -22deg; */
+    /*  */
 }
 
-/* #right img {
+/* gsap */
+/* #right img{
     top: 15%;
     left: 25%;
-}*/
+} */
 
-.page2 {
+/* page2 */
+.page2{
     height: 150vh;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     overflow: hidden;
 }
 
-.page2 h2 {
+.page2 h2{
     font-family: "Quicksand", sans-serif;
     font-size: 4rem;
     font-weight: 400;
@@ -363,13 +375,14 @@ nav .logo {
     margin: 6rem 0;
 }
 
-.page2 .sliderBox {
+.page2 .slideBox{
     position: relative;
+    /* background: yellow; */
     height: 25rem;
     width: 100%;
 }
 
-.page2 .slider {
+.page2 .slider{
     position: absolute;
     display: flex;
     gap: 3rem;
@@ -378,45 +391,44 @@ nav .logo {
     left: 0;
 }
 
-.page2 .slider .imgBox {
+.page2 .slider .imgBox{
     width: 25rem;
     height: 25rem;
     overflow: hidden;
 }
 
-.imgBox img {
+.imgBox img{
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.page2 .text {
+.page2 .text{
     width: 50%;
     margin-top: 4rem;
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     gap: 1rem;
 }
 
-.text h3 {
+.text h3{
     font-family: "Quicksand", sans-serif;
     font-size: 3rem;
     font-weight: 400;
     color: #0012a4;
 }
 
-.text p {
+.text p{
     font-size: 1.1rem;
     color: #032c95;
 }
 
-.text h4 {
+.text h4{
     font-size: 1rem;
     font-weight: 500;
     color: #0012a4;
     text-transform: uppercase;
-    border-radius: 2px solid #032c95;
+    border-bottom: 2px solid #032c95;
 }
